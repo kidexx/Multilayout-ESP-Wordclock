@@ -67,7 +67,8 @@ pio run -t upload
 ### Linux
 
 ```sh
-python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
+curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
+python3 get-platformio.py
 sudo apt install npm
 git clone https://github.com/ESPWortuhr/Wortuhr
 cd Wortuhr
